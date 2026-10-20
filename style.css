@@ -1,0 +1,95 @@
+
+/* Thiết lập chung cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Định dạng tiêu đề */
+h1 {
+    color: #155e9b;
+    margin-bottom: 15px;
+}
+
+/* Định dạng đoạn văn */
+body > p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Khối nội dung có ảnh nền */
+.content {
+    min-height: 350px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+
+    background-color: #356b8c;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ), url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    border: 3px solid #155e9b;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* Tiêu đề trong khối */
+.content h2 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+/* Đoạn văn trong khối */
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Nút bấm */
+button {
+    background-color: #ffffff;
+    color: #155e9b;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d9ebff;
+}
+
+/* Hiển thị trên điện thoại */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .content {
+        padding: 20px 15px;
+        min-height: 300px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+        margin-top: 35px;
+    }
+}
